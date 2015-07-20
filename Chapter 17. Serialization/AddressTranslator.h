@@ -5,7 +5,7 @@
 #if __cplusplus > 199711L
 
 #include <unordered_map>
-typedef std::unordered_map<int, int> SparseMatrix;
+typedef std::unordered_map<int, int> SparseIntVector;
 
 #else
 
@@ -30,7 +30,7 @@ namespace std
 
 #endif
 
-typedef std::hash_map<int, int> SparseMatrix;
+typedef std::hash_map<int, int> SparseIntVector;
 
 #endif
 
@@ -42,7 +42,7 @@ public:
     	static void Reset();
 
 private:
-	typedef SparseMatrix AddressTable;
+	typedef SparseIntVector AddressTable;
     	static AddressTable s_table;
 };
 
