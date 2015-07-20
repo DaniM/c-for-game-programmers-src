@@ -23,7 +23,7 @@ bool StreamFile::OpenRead (const std::string & filename)
     if (m_file != NULL)
         return false;
 
-    m_file = fopen(filename.c_str(), "r");
+    m_file = fopen(filename.c_str(), "rb");
     m_bReadMode = (m_file != NULL);
     return m_bReadMode;
 }
@@ -34,7 +34,7 @@ bool StreamFile::OpenWrite (const std::string & filename)
     if (m_file != NULL)
         return false;
 
-    m_file = fopen(filename.c_str(), "w");
+    m_file = fopen(filename.c_str(), "wb");
     m_bWriteMode = (m_file != NULL);
     return m_bWriteMode;
 }
@@ -57,8 +57,9 @@ int StreamFile::Read (int bytes, void * pBuffer)
 
     if (!m_bReadMode)
         return 0;
-
-    return fread(pBuffer, 1, bytes, m_file);
+// seems like the author prefer the bytes read instead of elements (it has a point too)
+// that's why he swaps size and count paramters
+    return fread(pBuffer, bytes, 1, m_file);
 }
 
 
@@ -68,7 +69,8 @@ int StreamFile::Write (int bytes, const void * pBuffer)
 
     if (!m_bWriteMode)
         return 0;
-
+// seems like the author prefer the bytes written instead of elements (it has a point too)
+// that's why he swaps size and count paramters
     return fwrite(pBuffer, 1, bytes, m_file);
 }
 
