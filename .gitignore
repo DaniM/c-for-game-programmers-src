@@ -1,0 +1,28 @@
+Chapter 07. MemoryMgr/*.o
+Chapter 07. MemoryMgr/*.obj
+Chapter 07. MemoryMgr/*.exe
+Chapter 07. MemoryMgr/main
+
+
+Chapter 13. Plugins/plugin_sample/build/*
+Chapter 13. Plugins/plugin_sample/src/plugins/build/*
+
+Chapter 15. RTTI/*.o
+Chapter 15. RTTI/testlib/*.o
+Chapter 15. RTTI/*.obj
+Chapter 15. RTTI/testlib/*.obj
+Chapter 15. RTTI/*.exe
+Chapter 15. RTTI/main
+
+Chapter 15. RTTIMulti/*.o
+Chapter 15. RTTIMulti/*.obj
+Chapter 15. RTTIMulti/*.exe
+Chapter 15. RTTIMulti/main
+
+Chapter 16. ObjectFactory/main
+Chapter 16. ObjectFactory/main.exe
+
+Chapter 17. Serialization/*.o
+Chapter 17. Serialization/*.obj
+Chapter 17. Serialization/main
+Chapter 17. Serialization/*.exe

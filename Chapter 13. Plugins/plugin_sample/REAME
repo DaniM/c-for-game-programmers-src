@@ -1,0 +1,6 @@
+Linux
+=====
+
+If the test doesn't find any .so make sure the path given to the program is included in the LD_LIBRARY_PATH
+>> LD_LIBRARY_PATH=LD_LIBRARY_PATH;[path]
+>> export LD_LIBRARY_PATH
